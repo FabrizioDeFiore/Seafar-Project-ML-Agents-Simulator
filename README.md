@@ -192,7 +192,7 @@ By installing the `mlagents` package, the dependencies listed in the
 After a complete set-up, you can start your training with this simple commands
 
 ```shell
-cd Unity/Project/Directory
+cd /Unity/Project/Directory
 conda activate mlagents
 mlagents-learn ml-agents/config/ppo/MyYamlFileName.yaml --run-id=MyId
 ```
