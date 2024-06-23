@@ -130,7 +130,7 @@ To install the `com.unity.ml-agents.extensions` package, you need to first
 clone the repo and then complete a local installation similar to what was
 outlined in the previous
 Complete installation steps can be found in the
-[package documentation](../com.unity.ml-agents.extensions/Documentation~/com.unity.ml-agents.extensions.md#installation).
+[package documentation](https://github.com/Unity-Technologies/ml-agents/blob/develop/com.unity.ml-agents.extensions/Documentation~/com.unity.ml-agents.extensions.md#installation).
 
 ### - Install the `mlagents` Python package
 
@@ -189,6 +189,19 @@ By installing the `mlagents` package, the dependencies listed in the
 
 ## Training
 
+After a complete set-up, you can start your training with this simple commands
+
+```shell
+cd Unity/Project/Directory
+conda activate mlagents
+mlagents-learn ml-agents/config/ppo/MyYamlFileName.yaml --run-id=MyId
+```
+This command will start a training following your YAML configuration file. 
+To resume your training simply type:
+
+```shell
+mlagents-learn ml-agents/config/ppo/MyYamlFileName.yaml --resume
+```
 
 # My Training Environment
 
