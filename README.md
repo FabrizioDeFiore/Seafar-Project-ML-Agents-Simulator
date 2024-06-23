@@ -53,9 +53,55 @@
 ## Introduction
 
 ## Unity and ML Agents
+The Unity Machine Learning Agents Toolkit (ML-Agents Toolkit) is an open-source project that enables games and simulations to serve as environments for training intelligent agents. Agents can be trained using reinforcement learning, imitation learning, neuroevolution, or other machine learning methods through a simple-to-use Python API. It also provide implementations (based on PyTorch) of state-of-the-art algorithms to enable game developers and hobbyists to easily train intelligent agents for 2D, 3D and VR/AR games. These trained agents can be used for multiple purposes, including controlling NPC behavior (in a variety of settings such as multi-agent and adversarial), automated testing of game builds and evaluating different game design decisions pre-release. 
+The ML-Agents Toolkit is mutually beneficial for both game developers and AI researchers as it provides a central platform where advances in AI can be evaluated on Unity’s rich environments and then made accessible to the wider research and game developer communities.
 
 
 # Set Up
+The ML-Agents Toolkit contains several components:
+
+* Unity package  `com.unity.ml-agents`  contains the Unity C# SDK that will be integrated into your Unity project. This package contains a sample to help you get started with ML-Agents.</li>
+* Unity package `com.unity.ml-agents.extensions` contains experimental C#/Unity components that are not yet ready to be part of the base `com.unity.ml-agents` package. `com.unity.ml-agents.extensions` has a direct dependency on `com.unity.ml-agents`.
+* Two Python packages:
+  *  `mlagents` contains the machine learning algorithms that enables you to train behaviors in your Unity scene. Most users of ML-Agents will only need to directly install mlagents.
+  *  `mlagents_envs` contains a set of Python APIs to interact with a Unity scene. It is a foundational layer that facilitates data messaging between Unity scene and the Python machine learning algorithms. Consequently, `mlagents` depends on `mlagents_envs`.
+* Unity Project that contains several example environments that highlight the various features of the toolkit to help you get started.
+The ML-Agents Toolkit contains several components:
+
+- Unity package ([`com.unity.ml-agents`](../com.unity.ml-agents/)) contains the
+  Unity C# SDK that will be integrated into your Unity project.  This package contains
+  a sample to help you get started with ML-Agents.
+- Unity package
+  ([`com.unity.ml-agents.extensions`](../com.unity.ml-agents.extensions/))
+  contains experimental C#/Unity components that are not yet ready to be part
+  of the base `com.unity.ml-agents` package. `com.unity.ml-agents.extensions`
+  has a direct dependency on `com.unity.ml-agents`.
+- Two Python packages:
+  - [`mlagents`](../ml-agents/) contains the machine learning algorithms that
+    enables you to train behaviors in your Unity scene. Most users of ML-Agents
+    will only need to directly install `mlagents`.
+  - [`mlagents_envs`](../ml-agents-envs/) contains a set of Python APIs to interact with
+    a Unity scene. It is a foundational layer that facilitates data messaging
+    between Unity scene and the Python machine learning algorithms.
+    Consequently, `mlagents` depends on `mlagents_envs`.
+- Unity [Project](https://github.com/Unity-Technologies/ml-agents/tree/main/Project/) that contains several
+  [example environments](Learning-Environment-Examples.md) that highlight the
+  various features of the toolkit to help you get started.
+
+Consequently, to install and use the ML-Agents Toolkit you will need to:
+
+- Install Unity (2023.2 or later)
+- Install Python (3.10.12 or higher)
+- Clone this repository (Recommended for the latest version and bug fixes)
+  - __Note:__ If you do not clone the repository, then you will not be
+  able to access the example environments and training configurations or the
+  `com.unity.ml-agents.extensions` package. Additionally, the
+  [Getting Started Guide](Getting-Started.md) assumes that you have cloned the
+  repository.
+- Install the `com.unity.ml-agents` Unity package
+- Install the `com.unity.ml-agents.extensions` Unity package (Optional)
+- Install the `mlagents-envs`
+- Install the `mlagents` Python package
 
 ## Installation
 
