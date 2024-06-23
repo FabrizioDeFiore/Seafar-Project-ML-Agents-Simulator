@@ -58,14 +58,7 @@ The ML-Agents Toolkit is mutually beneficial for both game developers and AI res
 
 
 # Set Up
-The ML-Agents Toolkit contains several components:
 
-* Unity package  `com.unity.ml-agents`  contains the Unity C# SDK that will be integrated into your Unity project. This package contains a sample to help you get started with ML-Agents.</li>
-* Unity package `com.unity.ml-agents.extensions` contains experimental C#/Unity components that are not yet ready to be part of the base `com.unity.ml-agents` package. `com.unity.ml-agents.extensions` has a direct dependency on `com.unity.ml-agents`.
-* Two Python packages:
-  *  `mlagents` contains the machine learning algorithms that enables you to train behaviors in your Unity scene. Most users of ML-Agents will only need to directly install mlagents.
-  *  `mlagents_envs` contains a set of Python APIs to interact with a Unity scene. It is a foundational layer that facilitates data messaging between Unity scene and the Python machine learning algorithms. Consequently, `mlagents` depends on `mlagents_envs`.
-* Unity Project that contains several example environments that highlight the various features of the toolkit to help you get started.
 The ML-Agents Toolkit contains several components:
 
 - Unity package ([`com.unity.ml-agents`](../com.unity.ml-agents/)) contains the
