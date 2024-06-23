@@ -61,7 +61,7 @@ The ML-Agents Toolkit is mutually beneficial for both game developers and AI res
 
 The ML-Agents Toolkit contains several components:
 
-- Unity package ([`com.unity.ml-agents`](../com.unity.ml-agents/)) contains the
+- Unity package ([`com.unity.ml-agents`](https://github.com/Unity-Technologies/ml-agents/tree/develop/com.unity.ml-agents)) contains the
   Unity C# SDK that will be integrated into your Unity project.  This package contains
   a sample to help you get started with ML-Agents.
 - Unity package
