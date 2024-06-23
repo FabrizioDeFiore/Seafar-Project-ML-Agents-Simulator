@@ -51,6 +51,21 @@
 # Project description
 
 ## Introduction
+This project seeks to develop a visually immersive simulation for the Seafar project.<br>
+This simulation will utilize Unity Machine Learning Agents (ML-Agents) to leverage the power of both reinforcement learning and imitation learning techniques.
+
+The ultimate objective is to provide users with the flexibility to choose between three distinct perspectives:
+- Third-person perspective in a 3D environment.
+- First-person view within a virtual reality (VR) experience.
+- First-person view within an augmented reality (AR) experience that integrates a live stream from the actual vessel.
+
+**NOTE:** As the live streaming component of the Seafar project is still under development, the current project has been strategically divided into two phases:
+- 3D Version: The 3D version serves as the foundational element of the entire project. It is within this environment that the reinforcement learning and imitation learning models are trained. This training process equips the models with the necessary decision-making capabilities and behaviors that will be crucial for the VR and future AR integrations. Additionally, the 3D version serves as the core structure upon which the VR and AR functionalities will be built. This approach ensures a cohesive and efficient development process.
+The 3D environment provides users with a visually rich and interactive platform to experience the simulated world. They can navigate this environment from a third-person perspective, allowing for a comprehensive understanding of the simulated scenarios. This initial phase focuses on establishing a robust and well-trained foundation for the subsequent development of the VR and AR experiences.
+- VR Version with AR Functionality: This version offers a first person perspective in VR and it's prepared to integrate the live stream functionality from the vessel once the streaming component is complete.
+
+This project presented a valuable opportunity to delve deeper into the mechanics of machine learning (ML) and artificial intelligence (AI).  Through this exploration, I have significantly broadened my understanding of these rapidly evolving fields. <br> 
+The project has further ignited my passion for the field of AI development. <br> The process of working with these technologies has been highly rewarding, and I am eager to continue exploring their potential in future projects.
 
 ## Unity and ML Agents
 The Unity Machine Learning Agents Toolkit (ML-Agents Toolkit) is an open-source project that enables games and simulations to serve as environments for training intelligent agents. Agents can be trained using reinforcement learning, imitation learning, neuroevolution, or other machine learning methods through a simple-to-use Python API. It also provide implementations (based on PyTorch) of state-of-the-art algorithms to enable game developers and hobbyists to easily train intelligent agents for 2D, 3D and VR/AR games. These trained agents can be used for multiple purposes, including controlling NPC behavior (in a variety of settings such as multi-agent and adversarial), automated testing of game builds and evaluating different game design decisions pre-release. 
