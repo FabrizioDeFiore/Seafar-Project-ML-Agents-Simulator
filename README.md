@@ -211,6 +211,7 @@ cd /path/to/Unity/Project
 conda activate mlagents
 mlagents-learn ml-agents/config/ppo/MyYamlFileName.yaml --run-id=MyId
 ```
+
 This command will start a training following your YAML configuration file. 
 To resume your training simply type:
 
@@ -218,12 +219,47 @@ To resume your training simply type:
 mlagents-learn ml-agents/config/ppo/MyYamlFileName.yaml --resume
 ```
 
+Once the training is started, you should see something like this: 
+<p align="center"> <img  src="https://github.com/FabrizioDeFiore/Seafar-Project-ML-Agents-Simulator/assets/78561254/58c58d14-39ac-43ad-be30-c782d7242b43" > </p>
+
+
+
 # My Training Environment
 
 ## Reinforcement Learning
 
+As this was my first foray into using ML-Agents, I began with a stripped-down environment containing just the vessel, a goal, and some walls. <br>
+Here, I used reinforcement learning to train the vessel to reach the goal from any starting position.
+Fine-tuning the reward system proved to be the most challenging aspect. I implemented penalties for excessive time consumption, straying from the goal, and wall collisions. Conversely, rewards were given for getting closer and ultimately reaching the goal, motivating the agent to navigate effectively.
+To prevent overfitting to a single scenario, both the agent and goal spawn locations were randomized at each episode restart. This forced the agent to develop robust pathfinding skills. To accelerate training, I also multiplied the number of simulated environments.
+
+### How it started 
+
+<div align="center"><video src="https://github.com/FabrizioDeFiore/Seafar-Project-ML-Agents-Simulator/assets/78561254/007835d8-d11a-401c-8626-709862453e76"> </div>
+
+The reward system's mathematical structure presented some initial hurdles. Initially, the agent displayed a preference for colliding with the walls immediately, potentially due to the time penalty outweighing the immediate penalty for a collision.
+After addressing this behavior, a new challenge arose: the agent favored staying in the center to avoid collision penalties altogether. Through persistent experimentation, I successfully fine-tuned the reward system to achieve the desired balance, ultimately leading to successful model training.
+
+### How it become 
+
+<div align="center"><video src="https://github.com/FabrizioDeFiore/Seafar-Project-ML-Agents-Simulator/assets/78561254/a6327a94-7488-4ca0-9c48-d086ac52b8c0"> </div>
+
 ## Combined Learning: Imitation + Reinforcement
 
+Following successful initial training, the environment underwent a significant transformation. It now features a more intricate and realistic path layout, replicating a more complex and practical scenario. To further enhance the training process, I incorporated several advanced technologies:
+* Combined Learning: The system now utilizes both reinforcement learning, the initial approach, and imitation learning. This allows the agent to learn not only through trial and error but also by observing and emulating pre-defined expert behaviors and even improving them.
+* Checkpoint Rewards: A checkpoint system for rewards was implemented. This introduces additional reward opportunities at specific points along the path, encouraging the agent to consistently progress towards the goal.
+* Non-contact Perception: A ray perception sensor was integrated, enabling the agent to analyze the surrounding environment without the risk of collision. This provides valuable information for the agent to navigate effectively.
+T
+Leveraging combined learning techniques significantly accelerated the agent's learning process. It quickly grasped the essential pathfinding strategies, enabling it to navigate the course much faster. Once it mastered circuit completion, the agent continuously refined its performance, surpassing my initial demonstrations.
+
+I've included my config.yaml file. This configuration file details the relative strengths assigned to the different learning reward signals (e.g., reinforcement learning, imitation learning) employed in the project.
+
+<p align="center"> <img  src="https://github.com/FabrizioDeFiore/Seafar-Project-ML-Agents-Simulator/assets/78561254/461bd13a-de6f-4f02-8af0-cd1778198271" > </p>
+
+
+
+### How it started
 
 # VR Scene Implementation
 
