@@ -16,12 +16,12 @@
   </a>
   <h1 align="center">Seafar-Project-ML-Agents-Simulator</h1> 
   <p align="center">
-    Python-Unity pipeline that transforms dry numerical data into engaging 3D object animations within a Unity environment    <br />
-    <br />
-    <br />
+    This project aims to create a visually immersive simulation for the Seafar project. 
+    The simulation will leverage Unity ML-Agents, employing both reinforcement learning and imitation learning techniques.
+
+
   </p>
 </div>
-
 
 
 <!-- TABLE OF CONTENTS -->
@@ -30,20 +30,20 @@
     <li><a href="#project-description">Project description</a> </li>
       <ul>
         <li><a href="#introduction">Introduction</a></li>
-        <li><a href="#Unity-and-ML-Agents">Unity and ML Agents</a></li>
+        <li><a href="#unity-and-ml-agents">Unity and ML Agents</a></li>
       </ul>
-    <li><a href="#Set Up">Set Up</a></li>
+    <li><a href="#set-up">Set Up</a></li>
       <ul>
         <li><a href="#installation">Installation</a></li>
         <li><a href="#training">Training</a></li>
       </ul>
-    <li><a href="#My-training-environemnts">My Training Environment</a></li>
+    <li><a href="#my-training-environment">My Training Environment</a></li>
       <ul>
         <li><a href="#reinforcement-learning">Reinforcement Learning</a></li>
-        <li><a href="#Combined-Learning:-Imitation-+-Reinforcement">Combined Learning: Imitation + Reinforcement</a></li>
+        <li><a href="#combined-learning-imitation-and-reinforcement">Combined Learning Imitation and Reinforcement</a></li>
       </ul>
-    <li><a href="#VR-scene-implementation">VR Scene Implementation</a></li>
-    <li><a href="#Conclusion-&-future-application">Conclusion & Future Application</a></li>
+    <li><a href="#vr-scene-implementation">VR Scene Implementation</a></li>
+    <li><a href="#conclusion">Conclusion </a></li>
   </ol>
 
 
@@ -241,7 +241,7 @@ How it started |How it become
 The reward system's mathematical structure presented some initial hurdles. Initially, the agent displayed a preference for colliding with the walls immediately, potentially due to the time penalty outweighing the immediate penalty for a collision.
 After addressing this behavior, a new challenge arose: the agent favored staying in the center to avoid collision penalties altogether. Through persistent experimentation, I successfully fine-tuned the reward system to achieve the desired balance, ultimately leading to successful model training.
 
-## Combined Learning: Imitation + Reinforcement
+## Combined Learning Imitation and Reinforcement
 
 Following successful initial training, the environment underwent a significant transformation. It now features a more intricate and realistic path layout, replicating a more complex and practical scenario. To further enhance the training process, I incorporated several advanced technologies:
 * Combined Learning: The system now utilizes both reinforcement learning, the initial approach, and imitation learning. This allows the agent to learn not only through trial and error but also by observing and emulating pre-defined expert behaviors and even improving them.
@@ -261,7 +261,15 @@ I've included my config.yaml file. This configuration file details the relative 
 
 
 # VR Scene Implementation
+This version offers a first person perspective in VR and it's prepared to integrate the live stream functionality from the vessel once the streaming component is complete.
 
+Due to the ongoing development of the Seafarer project, this section is reserved for future implementation. 
+The envisioned functionality entails a seamless transition, initiated by a user button press, between the 3D training environment rendered in virtual reality (VR) and a live video stream showcasing the actual vessel, presented in augmented reality (AR).
 
-# Conclusion & Future Application
+Crucially, during this transition, the user will retain a visual representation of the vessel originally encountered within the 3D training environment. Furthermore, the transitioned view will be projected within the dome environment for a broader audience.
 
+# Conclusion  
+The project explored the capabilities of both reinforcement learning and imitation learning, culminating in a well-trained agent capable of navigating complex environments.
+
+This project not only yielded a valuable training tool for the Seafarer project but also served as a springboard for further exploration of machine learning and artificial intelligence. <br>
+The learning achieved motivates continued investigation into the potential of these rapidly evolving fields and their application in future endeavors.
