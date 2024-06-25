@@ -7,7 +7,6 @@
 <a href="https://www.linkedin.com/in/fabrizio-de-fiore/"><img alt="Static Badge" src="https://img.shields.io/badge/Linkedin-maker?style=for-the-badge&logo=linkedin&color=blue"></a>
 </p>
 
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
@@ -19,10 +18,8 @@
     This project aims to create a visually immersive simulation for the Seafar project. 
     The simulation will leverage Unity ML-Agents, employing both reinforcement learning and imitation learning techniques.
 
-
   </p>
 </div>
-
 
 <!-- TABLE OF CONTENTS -->
   <summary>Table of Contents</summary>
@@ -43,7 +40,7 @@
         <li><a href="#combined-learning-imitation-and-reinforcement">Combined Learning Imitation and Reinforcement</a></li>
       </ul>
     <li><a href="#vr-scene-implementation">VR Scene Implementation</a></li>
-    <li><a href="#conclusion">Conclusion </a></li>
+    <li><a href="#conclusion-and-future-applications">Conclusion and Future Applications </a></li>
   </ol>
 
 
@@ -222,8 +219,6 @@ mlagents-learn ml-agents/config/ppo/MyYamlFileName.yaml --resume
 Once the training is started, you should see something like this: 
 <p align="center"> <img  src="https://github.com/FabrizioDeFiore/Seafar-Project-ML-Agents-Simulator/assets/78561254/58c58d14-39ac-43ad-be30-c782d7242b43" > </p>
 
-
-
 # My Training Environment
 
 ## Reinforcement Learning
@@ -232,7 +227,6 @@ As this was my first foray into using ML-Agents, I began with a stripped-down en
 Here, I used reinforcement learning to train the vessel to reach the goal from any starting position.
 Fine-tuning the reward system proved to be the most challenging aspect. I implemented penalties for excessive time consumption, straying from the goal, and wall collisions. Conversely, rewards were given for getting closer and ultimately reaching the goal, motivating the agent to navigate effectively.
 To prevent overfitting to a single scenario, both the agent and goal spawn locations were randomized at each episode restart. This forced the agent to develop robust pathfinding skills. To accelerate training, I also multiplied the number of simulated environments.
-
 
 How it started |How it become
 --|--
@@ -258,8 +252,6 @@ I've included my config.yaml file. This configuration file details the relative 
 
 <p align="center"> <img  src="https://github.com/FabrizioDeFiore/Seafar-Project-ML-Agents-Simulator/assets/78561254/461bd13a-de6f-4f02-8af0-cd1778198271" > </p>
 
-
-
 # VR Scene Implementation
 This version offers a first person perspective in VR and it's prepared to integrate the live stream functionality from the vessel once the streaming component is complete.
 
@@ -268,8 +260,15 @@ The envisioned functionality entails a seamless transition, initiated by a user 
 
 Crucially, during this transition, the user will retain a visual representation of the vessel originally encountered within the 3D training environment. Furthermore, the transitioned view will be projected within the dome environment for a broader audience.
 
-# Conclusion  
+# Conclusion and future applications
 The project explored the capabilities of both reinforcement learning and imitation learning, culminating in a well-trained agent capable of navigating complex environments.
 
 This project not only yielded a valuable training tool for the Seafarer project but also served as a springboard for further exploration of machine learning and artificial intelligence. <br>
-The learning achieved motivates continued investigation into the potential of these rapidly evolving fields and their application in future endeavors.
+
+The learning achieved motivates continued investigation into the potential of these rapidly evolving fields and their application in future endeavors and it also offer valuable insights into the potential applications of ML Agents for game development, particularly in the areas of:
+* Enhanced NPC Behavior with Evolving Strategies
+* Procedural Content Generation (PCG) for Dynamic Environments
+* Player Modeling and Personalization for Tailored Experiences
+* Richer Ecosystems for Open-World Exploration and Interaction
+
+These are just a few examples, and the potential applications of ML Agents in game development are constantly expanding. As the technology matures, we can expect to see even more innovative and immersive game experiences powered by the power of machine learning.
