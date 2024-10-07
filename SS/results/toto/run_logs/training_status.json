@@ -1,0 +1,38 @@
+{
+    "VasselGoToPort": {
+        "checkpoints": [
+            {
+                "steps": 74126,
+                "file_path": "results/toto/VasselGoToPort/VasselGoToPort-74126.onnx",
+                "reward": null,
+                "creation_time": 1710414111.752085,
+                "auxillary_file_paths": [
+                    "results/toto/VasselGoToPort/VasselGoToPort-74126.pt"
+                ]
+            },
+            {
+                "steps": 170101,
+                "file_path": "results/toto/VasselGoToPort/VasselGoToPort-170101.onnx",
+                "reward": -54465.0157623291,
+                "creation_time": 1710418977.3565457,
+                "auxillary_file_paths": [
+                    "results/toto/VasselGoToPort/VasselGoToPort-170101.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 170101,
+            "file_path": "results/toto/VasselGoToPort.onnx",
+            "reward": -54465.0157623291,
+            "creation_time": 1710418977.3565457,
+            "auxillary_file_paths": [
+                "results/toto/VasselGoToPort/VasselGoToPort-170101.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.0.0",
+        "torch_version": "1.13.1+rocm5.2"
+    }
+}

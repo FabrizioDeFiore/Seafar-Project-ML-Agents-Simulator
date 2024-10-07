@@ -1,0 +1,89 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1710419666",
+        "python_version": "3.10.12 (main, Jul  5 2023, 18:54:27) [GCC 11.2.0]",
+        "command_line_arguments": "/home/fab/miniconda3/envs/mlagents/bin/mlagents-learn ml-agents/config/ppo/VasselGoToPort.yaml --run-id=MarameoToto",
+        "mlagents_version": "1.0.0",
+        "mlagents_envs_version": "1.0.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "1.13.1+rocm5.2",
+        "numpy_version": "1.21.2",
+        "end_time_seconds": "1710419680"
+    },
+    "total": 14.417802077000488,
+    "count": 1,
+    "self": 0.012373289001516241,
+    "children": {
+        "run_training.setup": {
+            "total": 0.017001104999508243,
+            "count": 1,
+            "self": 0.017001104999508243
+        },
+        "TrainerController.start_learning": {
+            "total": 14.388427682999463,
+            "count": 1,
+            "self": 0.005269200998554879,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 14.370900945000358,
+                    "count": 1,
+                    "self": 6.43928175200017,
+                    "children": {
+                        "demo_to_buffer": {
+                            "total": 7.931619193000188,
+                            "count": 1,
+                            "self": 4.3012999412894715e-05,
+                            "children": {
+                                "load_demonstration": {
+                                    "total": 0.1536594260005586,
+                                    "count": 1,
+                                    "self": 0.13763703900076507,
+                                    "children": {
+                                        "read_file": {
+                                            "total": 0.016022386999793525,
+                                            "count": 1,
+                                            "self": 0.016022386999793525
+                                        }
+                                    }
+                                },
+                                "make_demo_buffer": {
+                                    "total": 7.777916754000216,
+                                    "count": 1,
+                                    "self": 1.4682164720179571,
+                                    "children": {
+                                        "steps_from_proto": {
+                                            "total": 6.309700281982259,
+                                            "count": 110438,
+                                            "self": 4.503854839607811,
+                                            "children": {
+                                                "_process_rank_one_or_two_observation": {
+                                                    "total": 1.8058454423744479,
+                                                    "count": 220876,
+                                                    "self": 1.8058454423744479
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "TrainerController._save_models": {
+                    "total": 0.012257537000550656,
+                    "count": 1,
+                    "self": 0.003414070000872016,
+                    "children": {
+                        "RLTrainer._checkpoint": {
+                            "total": 0.00884346699967864,
+                            "count": 1,
+                            "self": 0.00884346699967864
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

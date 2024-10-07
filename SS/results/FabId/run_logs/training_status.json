@@ -1,0 +1,29 @@
+{
+    "VasselGoToPort": {
+        "checkpoints": [
+            {
+                "steps": 3000,
+                "file_path": "results/FabId/VasselGoToPort/VasselGoToPort-3000.onnx",
+                "reward": null,
+                "creation_time": 1710247664.8342547,
+                "auxillary_file_paths": [
+                    "results/FabId/VasselGoToPort/VasselGoToPort-3000.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 3000,
+            "file_path": "results/FabId/VasselGoToPort.onnx",
+            "reward": null,
+            "creation_time": 1710247664.8342547,
+            "auxillary_file_paths": [
+                "results/FabId/VasselGoToPort/VasselGoToPort-3000.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.0.0",
+        "torch_version": "1.13.1+rocm5.2"
+    }
+}

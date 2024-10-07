@@ -1,0 +1,65 @@
+{
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.0.0",
+        "torch_version": "1.13.1+rocm5.2"
+    },
+    "VasselGoToPort": {
+        "checkpoints": [
+            {
+                "steps": 59000,
+                "file_path": "results/mew/VasselGoToPort/VasselGoToPort-59000.onnx",
+                "reward": null,
+                "creation_time": 1710256461.0505588,
+                "auxillary_file_paths": [
+                    "results/mew/VasselGoToPort/VasselGoToPort-59000.pt"
+                ]
+            },
+            {
+                "steps": 64917,
+                "file_path": "results/mew/VasselGoToPort/VasselGoToPort-64917.onnx",
+                "reward": 0.0,
+                "creation_time": 1710275186.4235547,
+                "auxillary_file_paths": [
+                    "results/mew/VasselGoToPort/VasselGoToPort-64917.pt"
+                ]
+            },
+            {
+                "steps": 68917,
+                "file_path": "results/mew/VasselGoToPort/VasselGoToPort-68917.onnx",
+                "reward": null,
+                "creation_time": 1710275401.337722,
+                "auxillary_file_paths": [
+                    "results/mew/VasselGoToPort/VasselGoToPort-68917.pt"
+                ]
+            },
+            {
+                "steps": 72917,
+                "file_path": "results/mew/VasselGoToPort/VasselGoToPort-72917.onnx",
+                "reward": null,
+                "creation_time": 1710275619.3461049,
+                "auxillary_file_paths": [
+                    "results/mew/VasselGoToPort/VasselGoToPort-72917.pt"
+                ]
+            },
+            {
+                "steps": 74917,
+                "file_path": "results/mew/VasselGoToPort/VasselGoToPort-74917.onnx",
+                "reward": null,
+                "creation_time": 1710318378.6959438,
+                "auxillary_file_paths": [
+                    "results/mew/VasselGoToPort/VasselGoToPort-74917.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 74917,
+            "file_path": "results/mew/VasselGoToPort.onnx",
+            "reward": null,
+            "creation_time": 1710318378.6959438,
+            "auxillary_file_paths": [
+                "results/mew/VasselGoToPort/VasselGoToPort-74917.pt"
+            ]
+        }
+    }
+}

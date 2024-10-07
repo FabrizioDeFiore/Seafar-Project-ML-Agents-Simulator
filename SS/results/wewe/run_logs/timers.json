@@ -1,0 +1,47 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1710413613",
+        "python_version": "3.10.12 (main, Jul  5 2023, 18:54:27) [GCC 11.2.0]",
+        "command_line_arguments": "/home/fab/miniconda3/envs/mlagents/bin/mlagents-learn ml-agents/config/ppo/VasselGoToPort.yaml --run-id=wewe",
+        "mlagents_version": "1.0.0",
+        "mlagents_envs_version": "1.0.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "1.13.1+rocm5.2",
+        "numpy_version": "1.21.2",
+        "end_time_seconds": "1710413629"
+    },
+    "total": 16.498420845000002,
+    "count": 1,
+    "self": 0.014276535000004031,
+    "children": {
+        "run_training.setup": {
+            "total": 0.01912099699999814,
+            "count": 1,
+            "self": 0.01912099699999814
+        },
+        "TrainerController.start_learning": {
+            "total": 16.465023313,
+            "count": 1,
+            "self": 0.0039509980000005385,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 16.461058091,
+                    "count": 1,
+                    "self": 16.461058091
+                },
+                "trainer_threads": {
+                    "total": 7.159999952932594e-07,
+                    "count": 1,
+                    "self": 7.159999952932594e-07
+                },
+                "TrainerController._save_models": {
+                    "total": 1.3508000002104836e-05,
+                    "count": 1,
+                    "self": 1.3508000002104836e-05
+                }
+            }
+        }
+    }
+}

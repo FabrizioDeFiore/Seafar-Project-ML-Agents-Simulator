@@ -1,0 +1,56 @@
+{
+    "VasselMoveToPort": {
+        "checkpoints": [
+            {
+                "steps": 304250,
+                "file_path": "results/andIDonTOnlyTalk/VasselMoveToPort/VasselMoveToPort-304250.onnx",
+                "reward": 450.7913398742676,
+                "creation_time": 1709817739.2238812,
+                "auxillary_file_paths": [
+                    "results/andIDonTOnlyTalk/VasselMoveToPort/VasselMoveToPort-304250.pt"
+                ]
+            },
+            {
+                "steps": 356804,
+                "file_path": "results/andIDonTOnlyTalk/VasselMoveToPort/VasselMoveToPort-356804.onnx",
+                "reward": 464.1258965317084,
+                "creation_time": 1709824386.015737,
+                "auxillary_file_paths": [
+                    "results/andIDonTOnlyTalk/VasselMoveToPort/VasselMoveToPort-356804.pt"
+                ]
+            },
+            {
+                "steps": 499963,
+                "file_path": "results/andIDonTOnlyTalk/VasselMoveToPort/VasselMoveToPort-499963.onnx",
+                "reward": 471.93310263254386,
+                "creation_time": 1709889611.98841,
+                "auxillary_file_paths": [
+                    "results/andIDonTOnlyTalk/VasselMoveToPort/VasselMoveToPort-499963.pt"
+                ]
+            },
+            {
+                "steps": 500003,
+                "file_path": "results/andIDonTOnlyTalk/VasselMoveToPort/VasselMoveToPort-500003.onnx",
+                "reward": 471.9396253797743,
+                "creation_time": 1709889612.03462,
+                "auxillary_file_paths": [
+                    "results/andIDonTOnlyTalk/VasselMoveToPort/VasselMoveToPort-500003.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 500003,
+            "file_path": "results/andIDonTOnlyTalk/VasselMoveToPort.onnx",
+            "reward": 471.9396253797743,
+            "creation_time": 1709889612.03462,
+            "auxillary_file_paths": [
+                "results/andIDonTOnlyTalk/VasselMoveToPort/VasselMoveToPort-500003.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.0.0",
+        "torch_version": "1.13.1+rocm5.2"
+    }
+}

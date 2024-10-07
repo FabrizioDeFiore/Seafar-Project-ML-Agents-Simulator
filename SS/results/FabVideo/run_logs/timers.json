@@ -1,0 +1,42 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1719388873",
+        "python_version": "3.10.12 (main, Jul  5 2023, 18:54:27) [GCC 11.2.0]",
+        "command_line_arguments": "/home/fab/miniconda3/envs/mlagents/bin/mlagents-learn ml-agents/config/ppo/VasselGoToPort.yaml --run-id=FabVideo",
+        "mlagents_version": "1.0.0",
+        "mlagents_envs_version": "1.0.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "1.13.1+rocm5.2",
+        "numpy_version": "1.21.2",
+        "end_time_seconds": "1719388899"
+    },
+    "total": 26.579986985000005,
+    "count": 1,
+    "self": 0.01769288600000607,
+    "children": {
+        "run_training.setup": {
+            "total": 0.01385244699999788,
+            "count": 1,
+            "self": 0.01385244699999788
+        },
+        "TrainerController.start_learning": {
+            "total": 26.548441652,
+            "count": 1,
+            "self": 0.0032055089999900588,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 26.545209564000004,
+                    "count": 1,
+                    "self": 26.545209564000004
+                },
+                "TrainerController._save_models": {
+                    "total": 2.657900000713198e-05,
+                    "count": 1,
+                    "self": 2.657900000713198e-05
+                }
+            }
+        }
+    }
+}

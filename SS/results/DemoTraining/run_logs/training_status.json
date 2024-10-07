@@ -1,0 +1,38 @@
+{
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.0.0",
+        "torch_version": "1.13.1+rocm5.2"
+    },
+    "VasselGoToPort": {
+        "checkpoints": [
+            {
+                "steps": 0,
+                "file_path": "results/DemoTraining/VasselGoToPort/VasselGoToPort-0.onnx",
+                "reward": null,
+                "creation_time": 1713172278.0271196,
+                "auxillary_file_paths": [
+                    "results/DemoTraining/VasselGoToPort/VasselGoToPort-0.pt"
+                ]
+            },
+            {
+                "steps": 42722,
+                "file_path": "results/DemoTraining/VasselGoToPort/VasselGoToPort-42722.onnx",
+                "reward": 121.66666666666667,
+                "creation_time": 1713173792.1542184,
+                "auxillary_file_paths": [
+                    "results/DemoTraining/VasselGoToPort/VasselGoToPort-42722.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 42722,
+            "file_path": "results/DemoTraining/VasselGoToPort.onnx",
+            "reward": 121.66666666666667,
+            "creation_time": 1713173792.1542184,
+            "auxillary_file_paths": [
+                "results/DemoTraining/VasselGoToPort/VasselGoToPort-42722.pt"
+            ]
+        }
+    }
+}

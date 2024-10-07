@@ -1,0 +1,47 @@
+{
+    "VasselGoToPort": {
+        "checkpoints": [
+            {
+                "steps": 88813,
+                "file_path": "results/marameo/VasselGoToPort/VasselGoToPort-88813.onnx",
+                "reward": -24.0,
+                "creation_time": 1710337135.0102153,
+                "auxillary_file_paths": [
+                    "results/marameo/VasselGoToPort/VasselGoToPort-88813.pt"
+                ]
+            },
+            {
+                "steps": 159026,
+                "file_path": "results/marameo/VasselGoToPort/VasselGoToPort-159026.onnx",
+                "reward": -21.583333333333332,
+                "creation_time": 1710338332.5219705,
+                "auxillary_file_paths": [
+                    "results/marameo/VasselGoToPort/VasselGoToPort-159026.pt"
+                ]
+            },
+            {
+                "steps": 194293,
+                "file_path": "results/marameo/VasselGoToPort/VasselGoToPort-194293.onnx",
+                "reward": -21.0,
+                "creation_time": 1710340461.1314993,
+                "auxillary_file_paths": [
+                    "results/marameo/VasselGoToPort/VasselGoToPort-194293.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 194293,
+            "file_path": "results/marameo/VasselGoToPort.onnx",
+            "reward": -21.0,
+            "creation_time": 1710340461.1314993,
+            "auxillary_file_paths": [
+                "results/marameo/VasselGoToPort/VasselGoToPort-194293.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.0.0",
+        "torch_version": "1.13.1+rocm5.2"
+    }
+}
